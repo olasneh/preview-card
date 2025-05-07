@@ -84,7 +84,7 @@ section.eth{
     gap: 5px;
     color: white;
     font-family: "Outfit", sans-serif;
-    font-size:14px ;
+    font-size:18px ;
 }
 .avatar img{
     width: 30px;
@@ -95,7 +95,7 @@ section.eth{
     padding-left: 10px;
     color:hsl(215, 32%, 53%);
     font-family: "Outfit", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
     .attribution { 
         font-size: 11px;
@@ -133,6 +133,11 @@ section.eth{
         color: hsl(178, 100%, 50%);
         transition: all 0.1s ease-in;
         cursor: pointer;
+     }
+     .border{
+        height: 1px;
+        width: 100%;
+        background: hsl(215, 32%, 27%);
      }
      @media (max-width:1024px){
        
