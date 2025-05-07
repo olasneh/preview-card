@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:hsl(217, 54%, 11%);
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    background: hsl(216, 50%, 16%);
+
+}
+section.card{
+    max-width: 100%;
+    position: relative;
+}
+section.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+h1{
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+.eth-price p{
+    color: hsl(215, 32%, 53%);
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+
+}
+section.eth{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.rate{
+    display: flex;
+    justify-content: space-between;
+}
+.amount{
+    color: hsl(178, 100%, 50%);
+    font-size: 16px;
+    font-weight: 500;
+    font-family:"Outfit", sans-serif;
+    display: flex;
+    gap: 8px;
+
+}
+.time{
+    color: hsl(215, 32%, 53%);
+    font-size: 18px;
+    font-family:"Outfit", sans-serif; 
+    display: flex;
+    gap: 8px;
+}
+.line{
+    color: hsl(215, 32%, 27%);
+}
+.avatar{
+    display: flex;
+    align-items: center;
+}
+.avatar p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-size:14px ;
+}
+.avatar img{
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.name{
+    padding-left: 10px;
+    color:hsl(215, 32%, 53%);
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+}
+    .attribution { 
+        font-size: 11px;
+         text-align: center; 
+         color: white;
+    }
+    .attribution a { 
+        color: hsl(178, 100%, 50%);
+        text-decoration: none;
+     }
+     .card:hover .overlay{
+        visibility: visible;
+        cursor: pointer;
+     }
+     .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: hsla(178, 100%, 50%, 0.5);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        transition: all 0.1s ease-in;
+     }
+     h1:hover{
+        color: hsl(178, 100%, 50%);
+        transition: all 0.1s ease-in;
+        cursor: pointer;
+     }
+     .avatar p:hover{
+        color: hsl(178, 100%, 50%);
+        transition: all 0.1s ease-in;
+        cursor: pointer;
+     }
+     @media (max-width:1024px){
+       
+        main{
+            width: 90%;
+            max-width: 100%;
+        }
+        
+     }
+
+
